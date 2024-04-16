@@ -6,13 +6,13 @@ return { -- correctly setup lspconfig
         angularls = {
           filetypes = { "typescript", "html", "typescriptreact", "typescript.tsx", "angular.html" },
         },
-        html = {
-          filetypes = {
-            "angular.html",
-            "html",
-            "templ",
-          },
-        },
+        -- html = {
+        --   filetypes = {
+        --     "angular.html",
+        --     "html",
+        --     "templ",
+        --   },
+        -- },
       },
       setup = {
         angularls = function(_, opts)
