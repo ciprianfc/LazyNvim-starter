@@ -16,6 +16,8 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.lang.tailwind" },
     { import = "lazyvim.plugins.extras.lang.go" },
+    -- { import = "lazyvim.plugins.coding.LuaSnip" },
+    -- { import = "lazyvim.plugins.coding.friendly-snippets" },
     -- { import = "lazyvim.plugins.extras.ui.mini-animate" },
     -- import/override with your plugins
     { import = "plugins" },
