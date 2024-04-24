@@ -8,3 +8,14 @@ local opt = vim.opt
 opt.wrap = true
 opt.breakindent = true
 opt.linebreak = true
+
+-- register file types
+vim.filetype.add({
+  extension = { tmpl = "html" },
+})
+
+-- vim.filetype.add({
+--   pattern = {
+--     [".*%.component%.html"] = "angular.html", -- Sets the filetype to `angular.html` if it matches the pattern
+--   },
+-- })
