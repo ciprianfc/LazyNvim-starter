@@ -6,13 +6,16 @@ return { -- correctly setup lspconfig
         angularls = {
           filetypes = { "typescript", "html", "typescriptreact", "typescript.tsx", "angular.html" },
         },
-        -- html = {
-        --   filetypes = {
-        --     "angular.html",
-        --     "html",
-        --     "templ",
-        --   },
-        -- },
+        -- this is needed here for tailwind to work
+        html = {
+          filetypes = {
+            "angular.html",
+            "html",
+            "templ",
+            "tmpl",
+            "template",
+          },
+        },
       },
       setup = {
         angularls = function(_, opts)
@@ -34,24 +37,29 @@ return { -- correctly setup lspconfig
   },
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
+    -- opts = {
+    --   ensure_installed = {
+    --     "angular",
+    --   },
+    -- },
+    opts = function(_, opts)
+      vim.list_extend(opts.ensure_installed, {
         "angular",
-      },
-    },
+      })
+    end,
   },
-  {
-    "windwp/nvim-ts-autotag",
-    opts = {
-      filetypes = {
-        "angular.html",
-        "typescript",
-        "rust",
-        "javascript",
-        "html",
-        "tsx",
-        "handlebars",
-      },
-    },
-  },
+  -- {
+  --   "windwp/nvim-ts-autotag",
+  --   opts = {
+  --     filetypes = {
+  --       "angular.html",
+  --       "typescript",
+  --       "rust",
+  --       "javascript",
+  --       "html",
+  --       "tsx",
+  --       "handlebars",
+  --     },
+  --   },
+  -- },
 }

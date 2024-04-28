@@ -5,11 +5,6 @@ return {
       servers = {
         tailwindcss = {
           filetypes_include = { "angular", "angular.html" },
-          -- init_options = {
-          --   userLanguages = {
-          --     ["angular.html"] = "html",
-          --   },
-          -- },
         },
       },
     },
