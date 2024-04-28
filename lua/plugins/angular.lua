@@ -1,4 +1,7 @@
 return { -- correctly setup lspconfig
+  -- { "elgiano/nvim-treesitter-angular", branch = "topic/jsx-fix" },
+  -- { "elgiano/nvim-treesitter-angular"},
+  -- { "nvim-treesitter/nvim-treesitter-angular", branch = "feat-control-flow" },
   {
     "neovim/nvim-lspconfig",
     opts = { -- make sure mason installs the server
@@ -48,18 +51,4 @@ return { -- correctly setup lspconfig
       })
     end,
   },
-  -- {
-  --   "windwp/nvim-ts-autotag",
-  --   opts = {
-  --     filetypes = {
-  --       "angular.html",
-  --       "typescript",
-  --       "rust",
-  --       "javascript",
-  --       "html",
-  --       "tsx",
-  --       "handlebars",
-  --     },
-  --   },
-  -- },
 }
