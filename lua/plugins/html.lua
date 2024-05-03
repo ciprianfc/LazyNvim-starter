@@ -17,4 +17,18 @@ return {
       },
     },
   },
+
+  {
+    "nvim-treesitter/nvim-treesitter",
+    -- opts = {
+    --   ensure_installed = {
+    --     "angular",
+    --   },
+    -- },
+    opts = function(_, opts)
+      vim.list_extend(opts.ensure_installed, {
+        "html",
+      })
+    end,
+  },
 }
