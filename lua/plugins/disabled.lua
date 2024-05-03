@@ -7,4 +7,7 @@ return {
   { "folke/flash.nvim", enabled = false },
   { "stevearc/dressing.nvim", enabled = false },
   { "echasnovski/mini.ai", enabled = false },
+  { "echasnovski/mini.indentscope", enabled = false },
+  { "dstein64/vim-startuptime", enabled = false },
+  { "Exafunction/codeium.nvim", enabled = false },
 }
