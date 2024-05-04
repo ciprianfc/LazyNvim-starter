@@ -10,4 +10,7 @@ return {
   { "echasnovski/mini.indentscope", enabled = false },
   { "dstein64/vim-startuptime", enabled = false },
   { "Exafunction/codeium.nvim", enabled = false },
+  { "JoosepAlviste/nvim-ts-context-commentstring", enabled = false },
+  { "echasnovski/mini.comment", enabled = false },
+  { "folke/neoconf.nvim", enabled = false },
 }
